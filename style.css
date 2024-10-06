@@ -1,13 +1,12 @@
 html {
   height: 100%;
   width: 100%;
-  font-family: "Titillium Web", sans-serif;
 }
 
 body {
-  min-height: 100%;
-  min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background: linear-gradient(rgb(1, 9, 21), rgba(58, 13, 2, 0.913));
+  padding: 100px;
+  font-family: "Poppins", sans-serif;
 }
 
 button {
@@ -21,17 +20,77 @@ button {
   align-items: center;
   flex-direction: column;
   border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(248, 248, 248, 0.984);
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+  width: 50vw;
+  margin: auto;
 }
-
+#main-content form #new-task-description {
+  padding: 10px;
+}
+#main-content form #task-priority {
+  width: 70px;
+  padding: 10px;
+  color: black;
+  font-weight: 400;
+  cursor: pointer;
+}
+#main-content form input[type="submit"] {
+  background: orangered;
+  margin-left: 10px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: 400;
+  width: 120px;
+}
 #list {
   margin: 10px;
   border: 1px solid #333;
   background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
+  padding: 5px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+  width: 80%;
+}
+#list ul li {
+  list-style: none;
+  font-size: 15px;
+  user-select: none;
+  position: relative;
+  margin-bottom: 8px;
+}
+#list ul li button {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px;
+  background: rgba(255, 0, 0, 0.785);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#list ul li button:hover {
+  color: rgba(255, 0, 0, 0.785);
+  background: rgb(244, 242, 242);
+}
+#list ul input[type="checkbox"] {
+  background-color: orangered;
+}
+#list #sort-tasks {
+  left: 20px;
+  background-color: none;
+  border: none;
+  color: red;
+  padding: 10px;
+  font-size: 8px;
+  cursor: pointer;
+  margin: 10px 0 0 10px;
 }
